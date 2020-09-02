@@ -1,7 +1,7 @@
-import React from 'react';
-import { PageContainer } from '@ant-design/pro-layout';
-import { Card, Alert, Typography } from 'antd';
-import styles from './Welcome.less';
+import React from 'react'
+import { PageContainer } from '@ant-design/pro-layout'
+import { Card, Alert, Typography } from 'antd'
+import styles from './Welcome.less'
 
 const CodePreview: React.FC<{}> = ({ children }) => (
   <pre className={styles.pre}>
@@ -9,7 +9,7 @@ const CodePreview: React.FC<{}> = ({ children }) => (
       <Typography.Text copyable>{children}</Typography.Text>
     </code>
   </pre>
-);
+)
 
 export default (): React.ReactNode => (
   <PageContainer>
@@ -21,7 +21,7 @@ export default (): React.ReactNode => (
         banner
         style={{
           margin: -12,
-          marginBottom: 24,
+          marginBottom: 24
         }}
       />
       <Typography.Text strong>
@@ -34,7 +34,7 @@ export default (): React.ReactNode => (
       <Typography.Text
         strong
         style={{
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         高级布局{' '}
@@ -45,4 +45,4 @@ export default (): React.ReactNode => (
       <CodePreview>yarn add @ant-design/pro-layout</CodePreview>
     </Card>
   </PageContainer>
-);
+)

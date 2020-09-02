@@ -50,5 +50,5 @@ export default {
   'menu.editor.mind': '脑图编辑器',
   'menu.editor.koni': '拓扑编辑器',
 
-  'menu.reactHooks': 'React Hooks',
-};
+  'menu.reactHooks': 'React Hooks'
+}

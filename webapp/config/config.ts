@@ -95,4 +95,12 @@ export default defineConfig({
   manifest: {
     basePath: '/',
   },
+  chainWebpack: config => {
+    config.module.rule('tsx')
+      .enforce('pre')
+      .test(/.(ts|tsx)$/)
+      .use('eslint-loader')
+      .loader('eslint-loader')
+      .options({ fix: true })
+  }
 });
